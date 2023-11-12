@@ -1,0 +1,381 @@
+* {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 5px 15px;
+    border: 1px solid #000;
+  }
+  nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  nav li {
+    margin: 0 35px;
+  }
+  nav a:hover {
+    color: #007BFF; 
+}
+
+  li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 15px;
+  }
+  div i {
+    font-size: 24px;
+    color: black;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+  }
+  div i:hover {
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+  }
+
+  .banner {
+    height: 295px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0 30px;
+  }
+
+  main h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 15px;
+    font-size: 30px;
+  }
+
+.main1 ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+}
+
+.main1 li {
+    margin-right: 40px;
+    margin-left: 40px;
+    }
+
+
+.main1 .image-container img {
+    width: 500px; 
+    height: auto; 
+}
+
+
+    .main1 .image-container,
+    .main1 .card-text {
+    text-align: center;
+}
+footer {
+    display: flex;
+    justify-content: space between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding-top: 20px;
+    width: 100%;
+  }
+  .column {
+    flex: 1;
+    padding: 20px;
+  }
+  .column img {
+    max-width: 100%;
+    height: auto;
+  }
+  .categories-footer {
+    list-style-type: disc;
+    padding: 0;
+    line-height: 1.5;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .social-icons {
+    display: flex;
+  }
+  .social-icons li {
+    margin-right: 10px;
+    
+  }
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  .copyright {
+    text-align: center;
+    color: black;
+    padding: 10px;
+  }
+
+
+.sec2 h2 {
+    text-align: center;
+    padding-left: 170px;
+    padding-bottom: 20px;
+  }
+  .review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .review img {
+    width: 600px;
+    height: auto;
+    margin-right: 20px;
+    padding-bottom: 30px;
+  }
+  .review-content {
+    position: relative;
+  }
+  .review h4 {
+    position: absolute;
+    top: -60px;
+    padding-left: 20px;
+  }
+  .review p {
+    max-width: 400px;
+    text-align: left;
+    margin-top: -20px;
+    padding-left: 20px;
+  }
+  .review h6 {
+    text-align: left;
+    margin-top: 100px;
+    padding-left: 20px;
+  }
+
+  .carlist ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.carlist li {
+    flex: 0 0 calc(50% - 10px); 
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.carlist img {
+    width: 60%; 
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.carlist a {
+    text-decoration: none;
+    color: #fff; 
+    background-color: #007BFF;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 16px; 
+    text-align: center;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-text a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #565657; 
+    color: #fff; 
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 5px;
+}
+
+.card-text a:hover {
+    background-color: #51a3f6; 
+}
+
+.cardetails-container {
+    display: flex;
+    align-items: center;
+}
+.cardetails_img img {
+    width: 800px; 
+    height: auto;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.cardetails p {
+    margin: 0;
+    font-size: 16px; 
+    margin-left: 0px;
+    display: flex;
+    font-size: 25px;
+}
+
+.boutonretour {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+}
+
+.boutonretour a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.brandlist ul {
+    list-style: none;
+    padding: 0;
+}
+
+.brandlist li {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.brandlist img {
+    width: 250px;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+.brandlist .info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.brandlist a {
+    text-decoration: none;
+    color: #fffcfc;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    background-color: #7b7e81;
+    border-radius: 5px;
+}
+.brand_create a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.brand_create a:hover {
+    background-color: #0056b3;
+}
+
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.carmodel_list {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.carmodel_list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.carmodel_list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    margin-bottom: 20px;
+ 
+}
+
+.carmodel_list a {
+    text-decoration: none;
+    color: #007BFF; 
+    background-color: #fff; 
+    padding: 10px 20px; 
+    margin: 5px 5px;
+    font-weight: bold;
+    border: 1px solid #007BFF; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s
+}

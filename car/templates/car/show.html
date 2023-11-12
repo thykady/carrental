@@ -1,0 +1,100 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Liste des Voitures</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <script
+        src="https://kit.fontawesome.com/42eebbce35.js"
+        crossorigin="anonymous"
+      ></script>
+    </head>
+    <body>
+        <header>
+            <H1>Carental</H1>
+            <nav>
+             <ul>
+                 <li><a href="{% url 'core_home' %}">Accueil</a> </li>
+                 <li><a href="{% url 'car_list' %}">Nos voitures</a></li>
+                 <li><a href="{% url 'carmodel_list' %}">Nos modèles</a></li>
+                 <li><a href="{% url 'brand_list' %}">Nos marques</a></li>
+             </ul>
+            </nav>
+            
+            <div>
+             <a href="https://www.facebook.com" target="_blank"
+               ><i class="fa-brands fa-square-facebook"></i
+             ></a>
+             <a href="https://www.twitter.com" target="_blank"
+               ><i class="fa-brands fa-twitter"></i
+             ></a>
+             <a href="https://www.instagram.com" target="_blank"
+               ><i class="fa-brands fa-instagram"></i
+             ></a>
+           </div>
+     
+         </header>
+     
+         <div><img class="banner" src="static/bannercarental.png" alt="" /></div>
+       
+<body>
+
+<main>
+
+
+ 
+    <h2>Détails de la Voiture</h2>
+    <div class="cardetails-container">
+        <div class="cardetails_img"> 
+            <img src="{{ car.image.url }}" alt="{{ car.name }}" width="200" height="200">
+        </div>
+    
+        <div class="cardetails">
+            <p>Nom: {{ car.name }}</p>
+            <p>Marque: {{ car.brand.name }}</p>
+            <p>Modèle: {{ car.model.name }}</p>
+            <p>Prix: {{ car.price }} FCFA</p>
+        </div>
+    </div>
+    
+    <div class="boutonretour">
+        <a href="{% url 'car_list' %}">Retour à la liste des voitures</a>
+    </div>
+
+</main>
+    
+</body>
+
+<footer>
+    <div class="column">
+    <h1>Carental</h1>
+    </div>
+   
+    <div class="column">
+      <h5>Menu</h5>
+      <ul>
+        <li><a href="{% url 'core_home' %}">Accueil</a> </li>
+        <li><a href="{% url 'car_list' %}">Nos voitures</a></li>
+        <li><a href="{% url 'carmodel_list' %}">Nos modèles</a></li>
+        <li><a href="{% url 'brand_list' %}">Nos marques</a></li>
+      </ul>
+    </div>
+    <div class="column">
+      <a href="https://www.facebook.com" target="_blank"
+        ><i class="fa-brands fa-square-facebook"></i
+      ></a>
+      <a href="https://www.twitter.com" target="_blank"
+        ><i class="fa-brands fa-twitter"></i
+      ></a>
+      <a href="https://www.instagram.com" target="_blank"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+    </div>
+</footer>
+
+<div class="copyright">&copy; 2023 FatemTRAORE</div>
+
+
+</html>
+
